@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #hello {
+    border: 1px solid red;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    }
+    #bye {
+    border: 1px solid red;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    }
+    </style>
+    <script>
+    var number = 0;
+    var sum = 0;
+    function onClick(){    
+    const div = document.getElementById("hello");
+    number = number+1;
+    sum=number%2;
+
+    if(sum==1){
+    div.style.backgroundColor="white";
+    }
+    else{
+    div.style.backgroundColor="black";
+    }
+    }
+
+    var secondNumber = 0;
+    var secondSum = 0;
+    function onClick2(){    
+    const div = document.getElementById("bye");
+    secondNumber = secondNumber+1;
+    secondSum=secondNumber%2;
+
+    if(secondSum==1){
+    div.style.backgroundColor="white";
+    }
+    else{
+    div.style.backgroundColor="black";
+    }
+    }
+
+    </script>
+</head>
+<body>
+<div id="hello" onclick="onClick()"></div>
+<div id="bye" onclick="onClick2()"></div>
+</body>
+</html>
